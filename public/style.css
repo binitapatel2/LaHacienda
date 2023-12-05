@@ -1,0 +1,445 @@
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'papyrus', sans-serif;
+  }
+  
+  body {
+    background-color: blanchedalmond;
+    height: 100%;
+  }
+  
+  header {
+    background-color: brown;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Style the logo */
+  img {
+    max-width: 500px;
+    height: auto;
+  }
+  
+  /* Style the navigation */
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color:blanchedalmond ;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: overline;
+    text-shadow: 2px 2px 4px white; /* Change to your desired hover color */
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    img {
+      margin-bottom: 15px;
+      width: 80px;
+      height: 80px;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    h3 {
+      font-size: 1em;
+    }
+  
+    #home h1 {
+      font-size: 2em;
+    }
+  
+    .pic {
+      padding: 30px;
+    }
+  
+    #about, #menu {
+      padding: 30px 10px;
+  }
+  
+  #menu h1 b {
+      font-size: 1.8em;
+       /* Adjust the font size for responsiveness */
+  }
+  
+  .slider a {
+      font-size: 0.9em; /* Adjust font size for smaller screens */
+  }
+  
+  #location, #hours {
+    padding: 30px 10px;
+  }
+  
+  #location h1 b {
+    font-size: 1.8em;
+  }
+  
+  #hours table {
+    width: 100%;
+  }
+  #location, #hours {
+    padding: 30px 10px;
+  }
+  
+  #location h1 b {
+    font-size: 1.8em;
+  }
+  
+  #hours table {
+    width: 100%;
+  }
+  .text {
+    font-size: 16px;
+    bottom: 5px;
+  }
+  
+  }
+  
+  /* Styling for the #home section */
+  #home {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .pic {
+    background-image: url('food.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #home h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  #home h1 b {
+    color: blanchedalmond;
+    background-color: rgba(3, 3, 3, 0.6); /* Dark background with transparency */
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  
+  
+  
+  
+  
+  /* Media query for responsiveness */
+  
+  
+  .glow {
+    font-size: 45px;
+    color: blanchedalmond;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px blanchedalmond, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 
+                    0 0 50px greenyellow, 0 0 60px green, 0 0 70px gold;
+    }
+    to {
+      text-shadow: 0 0 20px blanchedalmond, 0 0 30px #000000, 0 0 40px #000000, 0 0 50px #ff4da6, 
+                    0 0 60px brown, 0 0 70px red, 0 0 80px palegoldenrod;
+    }
+  }
+  
+  
+  
+  
+  
+  section {
+    padding: 40px 0;
+    text-align: center;
+    color: brown;
+  }
+  
+  style{
+    box-sizing: border-box;
+  }
+  #menu {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  #menu h1 b {
+    color: brown; /* Dark text color */
+    background-color: blanchedalmond; /* Example background color */
+    padding: 5px 10px;
+  }
+  .slider {
+    margin-top: 30px;
+  }
+  .slider a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  .slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+  .slides::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  .slides::-webkit-scrollbar-thumb {
+    background: brown;
+    border-radius: 10px;
+  }
+  .slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 769px;
+    height: 800px;
+    margin-right: 50px;
+    border-radius: 10px;
+    background: #eee;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+  }
+  
+  #slide-1{
+    background-image: url(menu1.jpg);
+    background-size: 769px 800px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+  }
+  #slide-2{
+    background-image: url(menu2.jpg);
+    background-size: 769px 800px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+  }
+  #slide-3{
+    background-image: url(menu3.jpg);
+    background-size: 769px 800px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+  }
+  #slide-4{
+    background-image: url(menu4.jpg);
+    background-size: 769px 800px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+  }
+  #slide-5{
+    background-image: url(menu5.jpg);
+    background-size: 769px 800px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+  }
+  .slider > a {
+    display: inline-flex;
+    width: 10rem;
+    height: 2.5rem;
+    background: white;
+    text-decoration: none;
+    color: brown;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0 0.5rem 0;
+    position:relative; /* Added absolute positioning */
+  }
+  .slider > a:active {
+    top: 1px;
+  }
+  .slider > a:hover{
+    text-decoration: overline;
+    text-shadow: 2px 2px 4px brown;
+  }
+  @supports (scroll-snap-type) {
+    .slider > a {
+      display: none;
+    }
+  }
+  
+  /* Styling for the 'location' section */
+  #location {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  #location .location {
+    margin-bottom: 30px;
+  }
+  
+  #location h1 b {
+    color: #333; /* Dark text color */
+    background-color: blanchedalmond; /* Example background color */
+    padding: 5px 10px;
+  }
+  
+  /* Styling for the 'hours' and 'contact' section */
+  #hours {
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: -50px;
+  }
+  
+  #hours table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  #hours th, #hours td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  #hours th {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  #hours td:first-child {
+    font-weight: bold;
+  }
+  
+  #hours .contact {
+    margin-top: 30px;
+  }
+  
+  #hours .contact p {
+    margin-bottom: 15px;
+  }
+  #info {
+    text-align: center;
+    padding: 50px 20px;
+    
+  }
+  
+  .slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  .mySlides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+  }
+  .mySlides img{
+    height: 400px; /* Set image height to 100% */
+    width: auto; /* Set image width to auto to maintain aspect ratio */
+    max-height: 100vh; /* Limit the image height to 100% of viewport height */
+    object-fit: contain;
+    
+  }
+  
+  .text {
+    color: blanchedalmond;
+    background-color: brown;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 477px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: brown;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  
+  footer{
+    background-color: brown;
+    color: blanchedalmond;
+    text-align: center;
+    padding: 10px 0;
+    clear: both;
+  }
+  /* Responsive map container */
+  .map-responsive-container {
+    overflow: hidden;
+    padding-bottom: 56.25%; /* Aspect ratio (height:width) for 16:9 */
+    position: relative;
+    height: 0;
+  }
+  
+  .map-responsive-container iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
