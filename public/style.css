@@ -2,6 +2,7 @@ body, h1, h2, p, ul {
     margin: 0;
     padding: 0;
     font-family: 'papyrus', sans-serif;
+    color: brown;
   }
   
   body {
@@ -21,7 +22,7 @@ body, h1, h2, p, ul {
   /* Style the logo */
   img {
     max-width: 500px;
-    height: auto;
+    max-height: 50px;
   }
   
   /* Style the navigation */
@@ -46,6 +47,12 @@ body, h1, h2, p, ul {
     text-shadow: 2px 2px 4px white; /* Change to your desired hover color */
   }
   
+  h3{
+    color:brown ;
+    text-align: center;
+    font-size: 14px;
+  }
+
   /* Media query for responsiveness */
   @media (max-width: 768px) {
     header {
@@ -54,7 +61,7 @@ body, h1, h2, p, ul {
     }
   
     img {
-      margin-bottom: 15px;
+      margin-bottom: 10px;
       width: 80px;
       height: 80px;
     }
@@ -82,44 +89,53 @@ body, h1, h2, p, ul {
     }
   
     #about, #menu {
-      padding: 30px 10px;
-  }
+      padding: 15px 10px;
+    }
   
-  #menu h1 b {
+    #about{
+      color: brown;
+      text-align: center;
+    }
+    
+    .info p {
+      margin: 0;
+    }
+    #menu h1 b {
       font-size: 1.8em;
-       /* Adjust the font size for responsiveness */
-  }
+    }
   
-  .slider a {
+    .slider a {
       font-size: 0.9em; /* Adjust font size for smaller screens */
-  }
+    }
   
-  #location, #hours {
-    padding: 30px 10px;
-  }
+    #location, #hours {
+      padding: 30px 10px;
+    }
   
-  #location h1 b {
-    font-size: 1.8em;
-  }
+    #location h1 b {
+      font-size: 1.8em;
+    }
   
-  #hours table {
-    width: 100%;
-  }
-  #location, #hours {
-    padding: 30px 10px;
-  }
+    #hours table {
+      width: 100%;
+    }
+
+    #location, #hours {
+      padding: 30px 10px;
+    }
   
-  #location h1 b {
-    font-size: 1.8em;
-  }
+    #location h1 b {
+      font-size: 1.8em;
+    }
   
-  #hours table {
-    width: 100%;
-  }
-  .text {
-    font-size: 16px;
-    bottom: 5px;
-  }
+    #hours table {
+      width: 100%;
+    }
+
+    .text {
+      font-size: 16px;
+      bottom: 5px;
+    }
   
   }
   
@@ -135,7 +151,7 @@ body, h1, h2, p, ul {
     background-position: center;
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(190, 48, 48, 0.772);
   }
   
   #home h1 {
@@ -145,18 +161,11 @@ body, h1, h2, p, ul {
   
   #home h1 b {
     color: blanchedalmond;
-    background-color: rgba(3, 3, 3, 0.6); /* Dark background with transparency */
-    padding: 5px 10px;
+    background-color: rgba(160, 61, 61, 0.6); 
+    padding: 0px 0px;
     border-radius: 5px;
+    font-size: 18px;
   }
-  
-  
-  
-  
-  
-  
-  /* Media query for responsiveness */
-  
   
   .glow {
     font-size: 45px;
@@ -178,10 +187,6 @@ body, h1, h2, p, ul {
                     0 0 60px brown, 0 0 70px red, 0 0 80px palegoldenrod;
     }
   }
-  
-  
-  
-  
   
   section {
     padding: 40px 0;
@@ -301,7 +306,6 @@ body, h1, h2, p, ul {
     }
   }
   
-  /* Styling for the 'location' section */
   #location {
     text-align: center;
     padding: 50px 20px;
@@ -311,13 +315,11 @@ body, h1, h2, p, ul {
     margin-bottom: 30px;
   }
   
-  #location h1 b {
-    color: #333; /* Dark text color */
-    background-color: blanchedalmond; /* Example background color */
-    padding: 5px 10px;
+  #location h1 b { 
+    padding: 0px 10px;
+    color: brown;
   }
   
-  /* Styling for the 'hours' and 'contact' section */
   #hours {
     text-align: center;
     padding: 50px 20px;
@@ -336,8 +338,8 @@ body, h1, h2, p, ul {
   }
   
   #hours th {
-    background-color: #333;
-    color: #fff;
+    background-color: brown;
+    color: blanchedalmond;
   }
   
   #hours td:first-child {
@@ -351,10 +353,14 @@ body, h1, h2, p, ul {
   #hours .contact p {
     margin-bottom: 15px;
   }
+
+  .contact p a {
+    color: brown;
+  }
+
   #info {
     text-align: center;
     padding: 50px 20px;
-    
   }
   
   .slideshow-container {
@@ -427,10 +433,10 @@ body, h1, h2, p, ul {
     padding: 10px 0;
     clear: both;
   }
-  /* Responsive map container */
+  
   .map-responsive-container {
     overflow: hidden;
-    padding-bottom: 56.25%; /* Aspect ratio (height:width) for 16:9 */
+    padding-bottom: 56.25%; 
     position: relative;
     height: 0;
   }
