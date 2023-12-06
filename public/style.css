@@ -200,6 +200,7 @@ body, h1, h2, p, ul {
   #menu {
     text-align: center;
     padding: 50px 20px;
+    font-size: 10px;
   }
   
   #menu h1 b {
@@ -309,6 +310,7 @@ body, h1, h2, p, ul {
   #location {
     text-align: center;
     padding: 50px 20px;
+    font-size: 10px;
   }
   
   #location .location {
@@ -335,11 +337,6 @@ body, h1, h2, p, ul {
   #hours th, #hours td {
     padding: 10px;
     border-bottom: 1px solid #ccc;
-  }
-  
-  #hours th {
-    background-color: brown;
-    color: blanchedalmond;
   }
   
   #hours td:first-child {
@@ -396,11 +393,12 @@ body, h1, h2, p, ul {
     padding: 8px 12px;
     position: absolute;
     bottom: 8px;
-    width: 477px;
+    width: auto;
     text-align: center;
     left: 50%;
     transform: translateX(-50%);
   }
+
   .dot {
     height: 15px;
     width: 15px;
